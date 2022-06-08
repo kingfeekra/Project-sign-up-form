@@ -29,10 +29,16 @@ body {
 }
 
 .logoDiv {
+    display:flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 25%;
     background-color: rgb(0, 0, 0, 0.5);
+    color: aliceblue;
     width: 100%;
     height: 90px;
+    font-size: 2.5rem;
+    
 }
 
 .contentSection {
@@ -48,6 +54,7 @@ body {
     align-content: flex-end;
     justify-content: flex-start;
     background-color: var(--main-bg-color);
+    
 }
 
 .contentTop div {
@@ -56,6 +63,7 @@ body {
 }
 
 .contentMiddle {
+    
     box-shadow: 0px 5px 5px;
 }
 
@@ -73,6 +81,7 @@ form {
 label {
     margin: 2vw;
     margin-left: 0;
+
     display: flex;
     flex-direction: column;
 }
@@ -102,4 +111,24 @@ label {
 
 .submitContent p {
     margin: 20px;
+}
+
+input {
+    font-size: 1rem;
+    padding: 5px 10px;
+    border: 2px solid rgb(201, 201, 201);
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.342);
+}
+
+input:invalid:focus {
+    border: 2px solid rgb(253, 28, 28);
+}
+
+input:valid:focus {
+    border: 2px solid rgb(7, 206, 0);
 }
