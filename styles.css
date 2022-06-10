@@ -178,6 +178,16 @@ input:valid:focus {
     .logoSection {
         width: 100vw;
         height: 20rem;
+        position: relative;
+    }
+
+    .logoDiv {
+        position: absolute;
+        position: absolute;
+        top: 50%;  /* position the top  edge of the element at the middle of the parent */
+        left: 50%; /* position the left edge of the element at the middle of the parent */
+        margin: 0;
+        transform: translate(-50%, -50%);
     }
 
     .contentSection {
@@ -189,6 +199,10 @@ input:valid:focus {
         margin-top: 2vw;
     }
 
+    .contentTop div p:nth-of-type(2) {
+        text-align: center;
+    }
+
     .form-section, .submitContent div{
         display: flex;
         flex-direction: column;
@@ -198,5 +212,9 @@ input:valid:focus {
 
     form {
         justify-content: center;
+    }
+
+    #submitButton {
+        margin-left: 0;
     }
 }
